@@ -13,7 +13,7 @@ export default async function DocsPage() {
 
   return (
     <div>
-      <h1 className={title()}>Docs</h1>
+      <h1 className={title()}>Docs. server side</h1>
       <div className={subtitle()}>{session?.user?.email}</div>
       {/* <button className="text-white" onClick={() => signOut()}>
         Logout

@@ -1,9 +1,9 @@
 import { title } from "@/components/primitives";
-import SignUpClientForm from "./components/SignUpClientForm";
+import SignUpClientForm from "./components/sign-up-form";
 
 const SignUpPage = () => {
   return (
-    <div className="p-6 space-y-4 md:space-y-8 sm:p-2">
+    <div className="space-y-4 md:space-y-8">
       <div>
         <h1 className={title()}>Sign up</h1>
         <p className={"!mt-2 text-sm font-light text-default-700"}>

@@ -1,6 +1,6 @@
 "use client";
 
-import CustomModal from "@/components/CustomModal";
+import CustomModal from "@/components/custom-modal";
 import { RightArrowIcon } from "@/components/icons";
 import useAuthHandlers from "@/hooks/useAuthHandlers";
 import { NextUIButtonRadius, NextUIButtonSize } from "@/types";
@@ -9,10 +9,10 @@ import { Input } from "@nextui-org/input";
 import { useDisclosure } from "@nextui-org/modal";
 import { Spinner } from "@nextui-org/spinner";
 import NextLink from "next/link";
+import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
-import OAuthClientForm from "../../components/OAuthClientForm";
-import { useRouter } from "next/navigation";
+import OAuthClientForm from "../../components/o-auth-client-form";
 
 interface Inputs {
   email: string;

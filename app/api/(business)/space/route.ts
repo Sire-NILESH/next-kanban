@@ -1,4 +1,4 @@
-import AppError from "@/lib/AppError";
+import AppError from "@/lib/appError";
 import dbConnect from "@/lib/dbConnect";
 import ErrorHandler, { ExtendedError } from "@/lib/errorHandler";
 import Space from "@/models/spaceModel";

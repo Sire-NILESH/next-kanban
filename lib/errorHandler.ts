@@ -1,7 +1,7 @@
 // import Error from "next/error";
 import { MongooseError } from "mongoose";
 import { NextRequest } from "next/server";
-import AppError from "./AppError";
+import AppError from "./appError";
 
 export interface ExtendedError extends Error, MongooseError {
   statusCode?: number;

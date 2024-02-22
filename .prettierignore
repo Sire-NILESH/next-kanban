@@ -1,0 +1,5 @@
+
+# exclude .next folder from the prettier
+**/.next
+**/*.next
+.next

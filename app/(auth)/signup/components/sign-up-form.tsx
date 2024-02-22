@@ -1,6 +1,6 @@
 "use client";
 
-import CustomModal from "@/components/CustomModal";
+import CustomModal from "@/components/custom-modal";
 import { RightArrowIcon } from "@/components/icons";
 import useAuthHandlers from "@/hooks/useAuthHandlers";
 import { NextUIButtonRadius, NextUIButtonSize } from "@/types";
@@ -12,8 +12,8 @@ import NextLink from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
-import OAuthClientForm from "../../components/OAuthClientForm";
-import TogglePasswordVisibilityBtn from "../../components/TogglePasswordVisibilityBtn";
+import OAuthClientForm from "../../components/o-auth-client-form";
+import TogglePasswordVisibilityBtn from "../../components/toggle-password-visibility-btn";
 
 interface Inputs {
   email: string;

@@ -32,7 +32,24 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            maxWidth: "none",
+            a: {
+              color: "#3182ce",
+              "&:hover": {
+                color: "#2c5282",
+              },
+            },
+          },
+        },
+      },
     },
   },
-  plugins: [nextui(), require("tailwindcss-animate")],
+  plugins: [
+    nextui(),
+    require("@tailwindcss/typography"),
+    require("tailwindcss-animate"),
+  ],
 };

@@ -1,3 +1,69 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* ---------------Adding dark mode support for easy mde ------------------------- */
+.cm-s-easymde .cm-tag {
+  color: #63a35c !important;
+}
+
+.cm-s-easymde .cm-attribute {
+  color: #795da3 !important;
+}
+
+.cm-s-easymde .cm-string {
+  @apply !text-blue-500 dark:text-blue-400;
+}
+
+.CodeMirror {
+  @apply !bg-background !text-default-800 !border-neutral-300 dark:!border-l-neutral-800 dark:!border-r-neutral-700 dark:!border-y-neutral-800;
+}
+
+/* wrong | spell check error text */
+.CodeMirror
+  .cm-spell-error:not(.cm-url):not(.cm-comment):not(.cm-tag):not(.cm-word) {
+  @apply dark:!bg-red-500/40;
+}
+
+/* react easymde has a custom cursor. This is how to change its color. Using css caret-color wont work*/
+.CodeMirror-cursor {
+  @apply dark:!border-l-white;
+}
+.CodeMirror div.CodeMirror-secondarycursor {
+  border-left: 1px solid silver;
+}
+
+.CodeMirror-selectedtext {
+  @apply !bg-content4;
+}
+
+.EasyMDEContainer .CodeMirror-fullscreen {
+  @apply !bg-background !text-default-800;
+}
+
+.EasyMDEContainer .CodeMirror-focused .CodeMirror-selected {
+  @apply !bg-background;
+}
+
+.editor-toolbar {
+  @apply text-default-800 !bg-background dark:!border-neutral-800;
+}
+
+.editor-toolbar button.active,
+.editor-toolbar button:hover {
+  @apply dark:bg-neutral-800 !border-neutral-600;
+}
+
+.editor-toolbar i.separator {
+  @apply dark:!border-l-neutral-700/70 dark:!border-y-neutral-700/70 dark:!border-r-transparent;
+}
+
+/* very important to add 'prose' for markdown to get get default css */
+.editor-preview {
+  @apply !bg-content2 prose prose-neutral dark:prose-invert;
+}
+
+.editor-preview-side {
+  @apply dark:border-neutral-800 prose prose-neutral dark:prose-invert;
+}
+/* ---------------/Adding dark mode support for easy mde ------------------------- */

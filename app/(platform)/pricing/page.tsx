@@ -11,7 +11,7 @@ export default function PricingPage() {
 
   return (
     <div className="space-y-4">
-      <h1 className={title()}>Pricing</h1>
+      <h1 className={title()}>Pricing, client side</h1>
       <p className={subtitle()}>{session?.data?.user?.email}</p>
 
       <ShadCnBtn type="submit" onClick={() => signOut()}>
